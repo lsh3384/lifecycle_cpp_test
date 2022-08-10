@@ -1,0 +1,17 @@
+[0.014s] Invoking command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --build /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test -- -j12 -l12
+[0.049s] [35m[1mScanning dependencies of target lifecycle_service_client[0m
+[0.062s] [ 66%] Built target lifecycle_talker
+[0.063s] [ 66%] Built target lifecycle_listener
+[0.068s] [ 83%] [32mBuilding CXX object CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o[0m
+[0.996s] [01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:107:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kdfsdf[m[K’ does not name a type
+[0.996s]   107 | [01;31m[Kdfsdf[m[K
+[0.996s]       | [01;31m[K^~~~~[m[K
+[1.016s] [01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:[m[K In function ‘[01m[Kvoid custom_change_state(std::shared_ptr<LifecycleServiceClient>, uint8_t)[m[K’:
+[1.016s] [01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:245:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LifecycleServiceClient[m[K’ {aka ‘[01m[Kclass LifecycleServiceClient[m[K’} has no member named ‘[01m[Kget_state[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+[1.016s]   245 |     if (!lc_client->[01;31m[Kget_state[m[K()) {
+[1.016s]       |                     [01;31m[K^~~~~~~~~[m[K
+[1.016s]       |                     [32m[Kget_name[m[K
+[1.610s] make[2]: *** [CMakeFiles/lifecycle_service_client.dir/build.make:63: CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o] Error 1
+[1.610s] make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/lifecycle_service_client.dir/all] Error 2
+[1.610s] make: *** [Makefile:141: all] Error 2
+[1.612s] Invoked command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --build /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test -- -j12 -l12

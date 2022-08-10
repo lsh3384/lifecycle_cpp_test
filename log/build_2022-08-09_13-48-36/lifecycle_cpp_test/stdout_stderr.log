@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target lifecycle_service_client[0m
+[ 66%] Built target lifecycle_talker
+[ 66%] Built target lifecycle_listener
+[ 83%] [32mBuilding CXX object CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o[0m
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::SingleThreadedExecutor::spin_until_future_complete(std::shared_future<void>&, int)[m[K’
+  272 |       exe.spin_until_future_complete(script, 1000[01;31m[K)[m[K;
+      |                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:25[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:194:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ResponseT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::Executor::spin_until_future_complete(const std::shared_future<_Res>&, std::chrono::duration<_Rep, _Period>)[m[K’
+  194 |   [01;36m[Kspin_until_future_complete[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:194:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep, _Period>[m[K’ and ‘[01m[Kint[m[K’
+  272 |       exe.spin_until_future_complete(script, 1000[01;36m[K)[m[K;
+      |                                                  [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/lifecycle_service_client.dir/build.make:63: CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/lifecycle_service_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

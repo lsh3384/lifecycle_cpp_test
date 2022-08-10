@@ -1,0 +1,3 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o[0m
+[ 66%] Built target lifecycle_listener
+[ 83%] Built target lifecycle_talker

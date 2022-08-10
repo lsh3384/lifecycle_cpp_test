@@ -1,0 +1,106 @@
+[0.109s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYPE=Debug']
+[0.109s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DCMAKE_BUILD_TYPE=Debug'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f001ca960d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f001ca960d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f001ca96610>)
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.128s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lee/robot_ws/src/lifecycle_cpp_test'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'lifecycle_cpp_test'
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.163s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 21 installed packages in /home/lee/robot_ws/install
+[0.165s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 258 installed packages in /opt/ros/foxy
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Debug']'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_target' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'lifecycle_cpp_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] DEBUG:colcon.colcon_core.verb:Building package 'lifecycle_cpp_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test', 'merge_install': False, 'path': '/home/lee/robot_ws/src/lifecycle_cpp_test', 'symlink_install': False, 'test_result_base': None}
+[0.221s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.225s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/robot_ws/src/lifecycle_cpp_test' with build type 'ament_cmake'
+[0.225s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/robot_ws/src/lifecycle_cpp_test'
+[0.231s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake /home/lee/robot_ws/src/lifecycle_cpp_test -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test
+[1.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake /home/lee/robot_ws/src/lifecycle_cpp_test -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test
+[1.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --build /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test -- -j12 -l12
+[6.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --build /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test -- -j12 -l12
+[6.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --install /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test
+[6.990s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lifecycle_cpp_test)
+[6.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lee/robot_ws/install/topic_service_action_rclpy_example:/home/lee/robot_ws/install/time_rclpy_example:/home/lee/robot_ws/install/tf2_rclpy_example:/home/lee/robot_ws/install/test_lee_rclpy:/home/lee/robot_ws/install/ros2env:/home/lee/robot_ws/install/my_first_ros_rclpy_pkg:/home/lee/robot_ws/install/logging_rclpy_example:/opt/ros/foxy /usr/bin/cmake --install /home/lee/robot_ws/src/lifecycle_cpp_test/build/lifecycle_cpp_test
+[6.996s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test' for CMake module files
+[6.996s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test' for CMake config files
+[6.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('lifecycle_cpp_test', 'cmake_prefix_path')
+[6.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.ps1'
+[6.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.dsv'
+[6.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.sh'
+[7.000s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib'
+[7.000s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/bin'
+[7.000s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/pkgconfig/lifecycle_cpp_test.pc'
+[7.001s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/python3.8/site-packages'
+[7.001s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/bin'
+[7.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.ps1'
+[7.003s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.dsv'
+[7.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.sh'
+[7.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.bash'
+[7.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.zsh'
+[7.005s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/colcon-core/packages/lifecycle_cpp_test)
+[7.026s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lifecycle_cpp_test)
+[7.028s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test' for CMake module files
+[7.029s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test' for CMake config files
+[7.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('lifecycle_cpp_test', 'cmake_prefix_path')
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.ps1'
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.dsv'
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/hook/cmake_prefix_path.sh'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/bin'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/pkgconfig/lifecycle_cpp_test.pc'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/python3.8/site-packages'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/bin'
+[7.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.ps1'
+[7.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.dsv'
+[7.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.sh'
+[7.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.bash'
+[7.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.zsh'
+[7.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/colcon-core/packages/lifecycle_cpp_test)
+[7.035s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.036s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.041s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.041s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.041s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.058s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/local_setup.ps1'
+[7.061s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/robot_ws/src/lifecycle_cpp_test/install/_local_setup_util_ps1.py'
+[7.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/setup.ps1'
+[7.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/local_setup.sh'
+[7.064s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/robot_ws/src/lifecycle_cpp_test/install/_local_setup_util_sh.py'
+[7.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/setup.sh'
+[7.066s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/local_setup.bash'
+[7.067s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/setup.bash'
+[7.069s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/local_setup.zsh'
+[7.069s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robot_ws/src/lifecycle_cpp_test/install/setup.zsh'

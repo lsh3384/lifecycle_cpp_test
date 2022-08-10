@@ -1,0 +1,14 @@
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:68:[m[K [01;31m[Kerror: [m[K‘[01m[KTimeRepT[m[K’ was not declared in this scope
+  272 |       exe.spin_until_future_complete(script, std::chrono::duration<[01;31m[KTimeRepT[m[K, TimeT> (0));
+      |                                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:78:[m[K [01;31m[Kerror: [m[K‘[01m[KTimeT[m[K’ was not declared in this scope
+  272 |       exe.spin_until_future_complete(script, std::chrono::duration<TimeRepT, [01;31m[KTimeT[m[K> (0));
+      |                                                                              [01;31m[K^~~~~[m[K
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  272 |       exe.spin_until_future_complete(script, std::chrono::duration<TimeRepT, TimeT[01;31m[K>[m[K (0));
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:272:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+make[2]: *** [CMakeFiles/lifecycle_service_client.dir/build.make:63: CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/lifecycle_service_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

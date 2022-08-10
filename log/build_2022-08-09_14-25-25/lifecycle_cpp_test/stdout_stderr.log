@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target lifecycle_service_client[0m
+[ 66%] Built target lifecycle_talker
+[ 66%] Built target lifecycle_listener
+[ 83%] [32mBuilding CXX object CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o[0m
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:107:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kdfsdf[m[K’ does not name a type
+  107 | [01;31m[Kdfsdf[m[K
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:[m[K In function ‘[01m[Kvoid custom_change_state(std::shared_ptr<LifecycleServiceClient>, uint8_t)[m[K’:
+[01m[K/home/lee/robot_ws/src/lifecycle_cpp_test/src/lifecycle_service_client.cpp:245:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LifecycleServiceClient[m[K’ {aka ‘[01m[Kclass LifecycleServiceClient[m[K’} has no member named ‘[01m[Kget_state[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+  245 |     if (!lc_client->[01;31m[Kget_state[m[K()) {
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                     [32m[Kget_name[m[K
+make[2]: *** [CMakeFiles/lifecycle_service_client.dir/build.make:63: CMakeFiles/lifecycle_service_client.dir/src/lifecycle_service_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/lifecycle_service_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

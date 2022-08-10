@@ -1,0 +1,24 @@
+[ 83%] Built target lifecycle_talker
+[100%] Built target lifecycle_service_client
+[ 83%] Built target lifecycle_listener
+-- Install configuration: "Debug"
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/lifecycle_cpp_test/lifecycle_talker
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/lifecycle_cpp_test/lifecycle_listener
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/lib/lifecycle_cpp_test/lifecycle_service_client
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test//launch
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test//launch/lifecycle_demo.launch.py
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/ament_index/resource_index/package_run_dependencies/lifecycle_cpp_test
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/ament_index/resource_index/parent_prefix_path/lifecycle_cpp_test
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/environment/ament_prefix_path.sh
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/environment/path.sh
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/environment/path.dsv
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/local_setup.bash
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/local_setup.sh
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/local_setup.zsh
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/local_setup.dsv
+-- Installing: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.dsv
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/ament_index/resource_index/packages/lifecycle_cpp_test
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/cmake/lifecycle_cpp_testConfig.cmake
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/cmake/lifecycle_cpp_testConfig-version.cmake
+-- Up-to-date: /home/lee/robot_ws/src/lifecycle_cpp_test/install/lifecycle_cpp_test/share/lifecycle_cpp_test/package.xml
