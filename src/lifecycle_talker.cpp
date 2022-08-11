@@ -20,6 +20,7 @@
 #include <utility>
 
 #include "lifecycle_msgs/msg/transition.hpp"
+#include "lifecycle_msgs/msg/state.hpp"
 
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp/publisher.hpp"
@@ -88,6 +89,7 @@ public:
     auto msg = std::make_unique<std_msgs::msg::String>();
     msg->data = "Lifecycle HelloWorld #" + std::to_string(++count);
 
+
     // Print the current state for demo purposes
     if (!pub_->is_activated()) {
       RCLCPP_INFO(
@@ -132,6 +134,23 @@ public:
 
     RCLCPP_INFO(get_logger(), "on_configure() is called.");
 
+    std::cout << "\navailable_states" << std::endl;
+    std::vector<rclcpp_lifecycle::State> available_states = this->get_available_states();
+    for (auto iter : available_states) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    std::cout << "---------------------------------------" << std::endl;
+
+    std::cout << "\navailable_transitions" << std::endl;
+    std::vector<rclcpp_lifecycle::Transition> available_transitions = this->get_available_transitions();
+    for (auto iter : available_transitions) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    const rclcpp_lifecycle::State & current_state = this->get_current_state();
+    std::cout << "\ncurrent_state" << std::endl;
+    std::cout << current_state.label() << std::endl;
     // We return a success and hence invoke the transition to the next
     // step: "inactive".
     // If we returned TRANSITION_CALLBACK_FAILURE instead, the state machine
@@ -162,6 +181,23 @@ public:
 
     RCUTILS_LOG_INFO_NAMED(get_name(), "on_activate() is called.");
 
+    std::cout << "\navailable_states" << std::endl;
+    std::vector<rclcpp_lifecycle::State> available_states = this->get_available_states();
+    for (auto iter : available_states) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    std::cout << "---------------------------------------" << std::endl;
+
+    std::cout << "\navailable_transitions" << std::endl;
+    std::vector<rclcpp_lifecycle::Transition> available_transitions = this->get_available_transitions();
+    for (auto iter : available_transitions) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    const rclcpp_lifecycle::State & current_state = this->get_current_state();
+    std::cout << "\ncurrent_state" << std::endl;
+    std::cout << current_state.label() << std::endl;
     // Let's sleep for 2 seconds.
     // We emulate we are doing important
     // work in the activating phase.
@@ -197,6 +233,23 @@ public:
 
     RCUTILS_LOG_INFO_NAMED(get_name(), "on_deactivate() is called.");
 
+    std::cout << "\navailable_states" << std::endl;
+    std::vector<rclcpp_lifecycle::State> available_states = this->get_available_states();
+    for (auto iter : available_states) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    std::cout << "---------------------------------------" << std::endl;
+
+    std::cout << "\navailable_transitions" << std::endl;
+    std::vector<rclcpp_lifecycle::Transition> available_transitions = this->get_available_transitions();
+    for (auto iter : available_transitions) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    const rclcpp_lifecycle::State & current_state = this->get_current_state();
+    std::cout << "\ncurrent_state" << std::endl;
+    std::cout << current_state.label() << std::endl;
     // We return a success and hence invoke the transition to the next
     // step: "inactive".
     // If we returned TRANSITION_CALLBACK_FAILURE instead, the state machine
@@ -228,6 +281,23 @@ public:
 
     RCUTILS_LOG_INFO_NAMED(get_name(), "on cleanup is called.");
 
+    std::cout << "\navailable_states" << std::endl;
+    std::vector<rclcpp_lifecycle::State> available_states = this->get_available_states();
+    for (auto iter : available_states) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    std::cout << "---------------------------------------" << std::endl;
+
+    std::cout << "\navailable_transitions" << std::endl;
+    std::vector<rclcpp_lifecycle::Transition> available_transitions = this->get_available_transitions();
+    for (auto iter : available_transitions) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    const rclcpp_lifecycle::State & current_state = this->get_current_state();
+    std::cout << "\ncurrent_state" << std::endl;
+    std::cout << current_state.label() << std::endl;
     // We return a success and hence invoke the transition to the next
     // step: "unconfigured".
     // If we returned TRANSITION_CALLBACK_FAILURE instead, the state machine
@@ -261,6 +331,24 @@ public:
       get_name(),
       "on shutdown is called from state %s.",
       state.label().c_str());
+
+    std::cout << "\navailable_states" << std::endl;
+    std::vector<rclcpp_lifecycle::State> available_states = this->get_available_states();
+    for (auto iter : available_states) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    std::cout << "---------------------------------------" << std::endl;
+
+    std::cout << "\navailable_transitions" << std::endl;
+    std::vector<rclcpp_lifecycle::Transition> available_transitions = this->get_available_transitions();
+    for (auto iter : available_transitions) {
+      std::cout << iter.label() << std::endl;
+    }
+
+    const rclcpp_lifecycle::State & current_state = this->get_current_state();
+    std::cout << "\ncurrent_state" << std::endl;
+    std::cout << current_state.label() << std::endl;
 
     // We return a success and hence invoke the transition to the next
     // step: "finalized".

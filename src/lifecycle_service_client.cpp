@@ -292,8 +292,32 @@ int main(int argc, char ** argv)
       std::bind(custom_change_state, lc_client, lifecycle_msgs::msg::Transition::TRANSITION_CLEANUP));
       exe.spin_until_future_complete(script);
       std::cout << "spin_until_future_complete finished";
+    } else if (command == "active_shutdown") {
+      std::shared_future<void> script = std::async(
+      std::launch::async,
+      std::bind(custom_change_state, lc_client, lifecycle_msgs::msg::Transition::TRANSITION_ACTIVE_SHUTDOWN));
+      exe.spin_until_future_complete(script);
+      std::cout << "spin_until_future_complete finished";
+    } else if (command == "inactive_shutdown") {
+      std::shared_future<void> script = std::async(
+      std::launch::async,
+      std::bind(custom_change_state, lc_client, lifecycle_msgs::msg::Transition::TRANSITION_INACTIVE_SHUTDOWN));
+      exe.spin_until_future_complete(script);
+      std::cout << "spin_until_future_complete finished";
+    } else if (command == "unconfigured_shutdown") {
+      std::shared_future<void> script = std::async(
+      std::launch::async,
+      std::bind(custom_change_state, lc_client, lifecycle_msgs::msg::Transition::TRANSITION_UNCONFIGURED_SHUTDOWN));
+      exe.spin_until_future_complete(script);
+      std::cout << "spin_until_future_complete finished";
+    } else if (command == "on_configure_failure") {
+      std::shared_future<void> script = std::async(
+      std::launch::async,
+      std::bind(custom_change_state, lc_client, lifecycle_msgs::msg::Transition::TRANSITION_ON_CONFIGURE_FAILURE));
+      exe.spin_until_future_complete(script);
+      std::cout << "spin_until_future_complete finished";
     } else {
-      std::cout << "commands should be one of the followings(configure, activate, deactivate, cleanup)";
+      std::cout << "commands should be one of the followings(configure, activate, deactivate, cleanup, active_shutdown, inactive_shutdown, unconfigured_shutdown)";
     }
   }
 
